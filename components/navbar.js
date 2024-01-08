@@ -75,10 +75,9 @@ const Navbar = props => {
                     <ThemeToggleButton />
                     <Box ml={2} display={{base: 'inline-block', md: 'none'}}>
                         <Menu>
-                            <MenuButton as={IconButton} icon={<MenuRoundedIcon />} variant="outline" aria-label="Options">
-                            </MenuButton>
+                            <MenuButton as={IconButton} icon={<MenuRoundedIcon />} variant="outline" aria-label="Options" />
                             <MenuList>
-                            <NextLink href="/" passHref>
+                                <NextLink href="/" passHref>
                                     <MenuItem as={Link}>About</MenuItem>
                                 </NextLink>
                                 <NextLink href="/works" passHref>

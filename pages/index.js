@@ -1,5 +1,8 @@
-import { Container, Box , Heading, Image, useColorModeValue} from '@chakra-ui/react'
+import { Container, Box , Heading, Image, useColorModeValue, Link, Button} from '@chakra-ui/react'
+import NextLink from 'next/link'
 import Section from '../components/section'
+import Paragraph from '../components/paragraph'
+import ChevronRightRoundedIcon from '@mui/icons-material/ChevronRightRounded';
 
 const Page = () => {
     return(
@@ -38,9 +41,22 @@ const Page = () => {
                 <Heading as="h3" variant="section-title">
                     Works
                 </Heading>
-                <p>
-                    Paragraph
-                </p>
+                <Paragraph>
+                    Daniel Rodriguez is a Data Scientist with a profound interest and passion for machine learning and data engineering.
+                    Previous experience ranges from the deployment of crafted reports for senior management to working within hackathon teams to deploy a clustering analysis tool.
+                    The workplace is not the trial ground for these skillsets, working on various projects and workflows that can be found on his GitHub to constantly develop beyond.
+                    To see a quick overview on these projects check out his{' '}
+                    <NextLink href="https://github.com/danielarodval/resume?tab=readme-ov-file">
+                        <Link>GitHub</Link>
+                    </NextLink>.
+                </Paragraph>
+                <Box align="center" my={4}>
+                    <NextLink href="/works">
+                        <Button rightIcon={<ChevronRightRoundedIcon />} colorScheme="green">
+                            My Portfolio
+                        </Button>
+                    </NextLink>
+                </Box>
             </Section>
         </Container>
     )
