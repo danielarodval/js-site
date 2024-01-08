@@ -29,7 +29,7 @@ const Page = () => {
                     maxWidth="100px"
                     display="inline-block"
                     borderRadius="full"
-                    src="/images/daniel.jpg"
+                    src="/images/daniel.png"
                     alt="Profile Image"/>
                 </Box>
             </Box>
