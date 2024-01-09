@@ -21,16 +21,16 @@ padding: 10px;
 const Logo = () => {
     return (
         <Link href="/">
-                <LogoBox>
-                    <AnalyticsRoundedIcon style={{ fontSize: 20 }} /> {/* Using the Analytics icon */}
-                    <Text 
+            <LogoBox>
+                <AnalyticsRoundedIcon style={{ fontSize: 20 }} /> {/* Using the Analytics icon */}
+                <Text
                     color={useColorModeValue('gray.800', 'whiteAlpha.900')}
                     fontFamily='M PLUS Rounded 1c'
                     fontWeight="bold"
                     ml={3}>
-                        Daniel Rodriguez
-                    </Text>
-                </LogoBox>
+                    Daniel Rodriguez
+                </Text>
+            </LogoBox>
         </Link>
     )
 }
