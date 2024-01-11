@@ -24,6 +24,7 @@ const Page = () => {
                             Machine Learning Enthusiast (Analyst, Tinkerer, Designer)
                         </p>
                     </Box>
+
                     <Box
                         flexShrink={0}
                         mt={{ base: 4, md: 0 }}
@@ -50,9 +51,9 @@ const Page = () => {
                         Previous experience ranges from the deployment of business intelligence reports for senior management to working within hackathon teams to deploy a ML tools.
                         Honing in these skills is not limited to the workplace, working on various projects and reports showcasing a versatile repertoire of coding and analytical skills.
                         To see a quick overview on these projects check out his{' '}
-                        <NextLink href="https://github.com/danielarodval/resume?tab=readme-ov-file">
-                            <Link>GitHub</Link>
-                        </NextLink>.
+                        <Link href="https://github.com/danielarodval/resume?tab=readme-ov-file" target="_blank" rel="noopener noreferrer">
+                            GitHub
+                        </Link>.
                     </Paragraph>
                     <Box align="center" my={4}>
                         <NextLink href="/works">
@@ -84,7 +85,7 @@ const Page = () => {
                         Hobbies
                     </Heading>
                     <Paragraph>
-                        {' '}<Link href='/keyboard' target="_blank">Keyboards</Link>, Music, Home Automation, {' '}<Link href='/coffee' target="_blank">Coffee</Link>, Random Scripts
+                        <Link href='/keyboard' target="_blank" rel="noopener noreferrer">Keyboards</Link>, Music, Home Automation, <Link href='/coffee' target="_blank" rel="noopener noreferrer">Coffee</Link>, Random Scripts
                     </Paragraph>
                 </Section>
 

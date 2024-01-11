@@ -13,7 +13,6 @@ const Website = ({ Component, pageProps, router }) => {
             </Head>
 
             <Fonts />
-
             <Layout router={router}>
                 <AnimatePresence mode="wait" initial={true}>
                     <Component {...pageProps} key={router.route} />

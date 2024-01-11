@@ -21,7 +21,7 @@ const LinkItem = ({ href, path, children }) => {
     const active = path === href
     const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
     return (
-        <NextLink href={href}>
+        <NextLink href={href} passHref>
             <Link
                 p={2}
                 bg={active ? 'glassTeal' : undefined}
@@ -86,9 +86,7 @@ const Navbar = props => {
                                 <NextLink href="/posts" passHref>
                                     <MenuItem as={Link}>Posts</MenuItem>
                                 </NextLink>
-                                <NextLink href="https://github.com/danielarodval/js-site" passHref>
-                                    <MenuItem as={Link} href="https://github.com/danielarodval/js-site">View Source</MenuItem>
-                                </NextLink>
+                                <MenuItem as="a" href="https://github.com/danielarodval/js-site" target="_blank" rel="noopener noreferrer">View Source</MenuItem>
                             </MenuList>
                         </Menu>
                     </Box>

@@ -1,4 +1,4 @@
-import { Container, Box, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
 import thumbScraper from '../public/images/scraper.png'
 import thumbPricing from '../public/images/home_pricing.png'
 import thumbSite from '../public/images/site.png'
@@ -10,7 +10,7 @@ const Works = () => {
     return (
         <Layout>
             <Container>
-                <Heading as="h3" fontsize={20} mb={4}>
+                <Heading as="h3" fontSize={20} mb={4}>
                     Works
                 </Heading>
 
@@ -22,7 +22,7 @@ const Works = () => {
 
                 <SimpleGrid columns={[1, 1, 2]} gap={6}>
                     <Section>
-                        <WorkGridItem id="scraper" title="This Website" thumbnail={thumbSite}>
+                        <WorkGridItem id="js" title="This Website" thumbnail={thumbSite}>
                             An Example
                         </WorkGridItem>
                     </Section>
@@ -37,7 +37,7 @@ const Works = () => {
 
                 <SimpleGrid columns={[1, 1, 2]} gap={6}>
                     <Section>
-                        <WorkGridItem id="scraper" title="Home Pricing Insights: Treasury Data & Index Funds" thumbnail={thumbPricing}>
+                        <WorkGridItem id="pricing" title="Home Pricing Insights: Treasury Data & Index Funds" thumbnail={thumbPricing}>
                             An Example
                         </WorkGridItem>
                     </Section>
