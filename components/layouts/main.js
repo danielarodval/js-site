@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import NavBar from '../navbar.js'
 import { Box, Container } from '@chakra-ui/react'
+import { Analytics } from '@vercel/analytics/react'
 
 const Main = ({ children, router }) => {
     return (
@@ -16,6 +17,7 @@ const Main = ({ children, router }) => {
                 {children}
             </Container>
 
+            <Analytics />
         </Box>
     )
 }

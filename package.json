@@ -9,7 +9,21 @@
     "prettier": "prettier --write .",
     "lint": "next lint"
   },
-  "keywords": ["react","components","portfolio","ui","next.js","node.js","web development","personal website","developer","animation","responsive design","data science","Daniel Rodriguez"],
+  "keywords": [
+    "react",
+    "components",
+    "portfolio",
+    "ui",
+    "next.js",
+    "node.js",
+    "web development",
+    "personal website",
+    "developer",
+    "animation",
+    "responsive design",
+    "data science",
+    "Daniel Rodriguez"
+  ],
   "author": "Daniel Rodriguez",
   "license": "MIT",
   "dependencies": {
@@ -18,8 +32,10 @@
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.15.3",
+    "@vercel/analytics": "^1.1.1",
     "framer-motion": "^10.17.9",
     "next": "^14.0.4",
+    "package": "^1.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
