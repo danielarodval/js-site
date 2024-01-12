@@ -7,4 +7,6 @@ node_modules/
 # Other common ignores
 .env
 .DS_Store
-cache
+
+# Next.js cache
+.next/cache/

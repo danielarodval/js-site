@@ -16,11 +16,12 @@ import {
     IconButton,
     useColorModeValue
 } from '@chakra-ui/react'
-import { forwardRef } from 'react';
+import { forwardRef } from 'react'
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const LinkItem = ({ href, path, children, target, ...props }) => {
     const active = path === href
-    const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
+    const inactiveColor = useColorModeValue('gray.800', 'whiteAlpha.900')
     return (
         <Link
             as={NextLink}
@@ -30,14 +31,15 @@ const LinkItem = ({ href, path, children, target, ...props }) => {
             bg={active ? 'glassTeal' : undefined}
             color={active ? '#202023' : inactiveColor}
             target={target}
-            {...props}>
+            {...props}
+        >
             {children}
         </Link>
     )
 }
 
-const MenuLink = forwardRef((props, ref) =>(
-    <Link ref={ref} as={NextLink} {...props}/>
+const MenuLink = forwardRef((props, ref) => (
+    <Link ref={ref} as={NextLink} {...props} />
 ))
 
 const Navbar = props => {
@@ -64,6 +66,7 @@ const Navbar = props => {
                         <Logo />
                     </Heading>
                 </Flex>
+
                 <Stack
                     direction={{ base: 'column', md: 'row' }}
                     display={{ base: 'none', md: 'flex' }}
@@ -77,13 +80,17 @@ const Navbar = props => {
                     <LinkItem href="/posts" path={path}>
                         Posts
                     </LinkItem>
+                    <LinkItem target="_blank" href="https://github.com/danielarodval/js-site" path={path} display="inline-flex" alignItems="center" style={{ gap: 4 }} pl={2}>
+                        <GitHubIcon />
+                        Source
+                    </LinkItem>
                 </Stack>
 
                 <Box flex={1} align="right">
                     <ThemeToggleButton />
                     <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
                         <Menu isLazy id="navbar-menu">
-                            <MenuButton as={IconButton} icon={<MenuRoundedIcon />} variant="outline" aria-label="Options"/>
+                            <MenuButton as={IconButton} icon={<MenuRoundedIcon />} variant="outline" aria-label="Options" />
                             <MenuList>
                                 <MenuItem as={MenuLink} href="/">
                                     About
