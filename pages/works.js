@@ -22,7 +22,7 @@ const Works = () => {
 
                 <SimpleGrid columns={[1, 1, 2]} gap={6}>
                     <Section>
-                        <WorkGridItem id="js" title="This Website" thumbnail={thumbSite}>
+                        <WorkGridItem title="This Portfolio Website" thumbnail={thumbSite} href="https://www.danrodval.com/">
                             An Example
                         </WorkGridItem>
                     </Section>
@@ -37,12 +37,12 @@ const Works = () => {
 
                 <SimpleGrid columns={[1, 1, 2]} gap={6}>
                     <Section>
-                        <WorkGridItem id="pricing" title="Home Pricing Insights: Treasury Data & Index Funds" thumbnail={thumbPricing}>
+                        <WorkGridItem title="Home Pricing Insights: Treasury Data & Index Funds" thumbnail={thumbPricing} href="https://github.com/danielarodval/js-site">
                             An Example
                         </WorkGridItem>
                     </Section>
                     <Section>
-                        <WorkGridItem id="scraper" title="Morningstar Index Fund Performance Harvester" thumbnail={thumbScraper}>
+                        <WorkGridItem id="scraper" title="Morningstar Index Fund Performance Harvester" thumbnail={thumbScraper} href="https://github.com/danielarodval/js-site">
                             An Example
                         </WorkGridItem>
                     </Section>

@@ -1,6 +1,5 @@
-import NextLink from 'next/link'
 import Image from 'next/image'
-import { Box, Text, LinkBox, LinkOverlay, Link } from '@chakra-ui/react'
+import { Box, Text, LinkBox, LinkOverlay, Link, useColorModeValue } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 
 export const GridItem = ({ children, href, title, thumbnail }) => (
@@ -15,19 +14,31 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
     </Box>
 )
 
-export const WorkGridItem = ({ children, id, title, thumbnail }) => (
+export const WorkGridItem = ({ children, title, thumbnail, href }) => (
     <Box w="100%" align="center">
-        <NextLink href={`/works/${id}`}>
-            <LinkBox cursor="pointer">
-                <Image src={thumbnail} alt={title} className="grid-item-thumbnail" placeholder="blur" />
-                <LinkOverlay href={`/works/${id}`}>
-                    <Text mt={2} fontSize={20}>
-                        {title}
-                    </Text>
-                </LinkOverlay>
-                <Text fontSize={14}>{children}</Text>
-            </LinkBox>
-        </NextLink>
+        <LinkBox
+            as={Link}
+            href={href}
+            scroll={false}
+            cursor="pointer"
+            bg={undefined}
+            color={useColorModeValue('gray200', 'whiteAlpha.900')}
+            _hover={{ textDecoration: 'none'}}
+            >
+            <Image
+                src={thumbnail}
+                alt={title}
+                className='grid-item-thumbnail'
+                placeholder='blur' />
+            <LinkOverlay as="div" href={href}>
+                <Text mt={2} fontSize={20}>
+                    {title}
+                </Text>
+            </LinkOverlay>
+            <Text fontSize={14}>
+                {children}
+            </Text>
+        </LinkBox>
     </Box>
 )
 
