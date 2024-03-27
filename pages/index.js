@@ -78,6 +78,12 @@ const Page = () => {
                         </BioYear>
                         Completing a Bachelor&apos;s in Data Science with Minors in Computer Science and Statistics from the University of Central Florida
                     </BioSection>
+                    <BioSection>
+                        <BioYear>
+                            2024
+                        </BioYear>
+                        Data Scientist I at the Bank of New York Mellon working on machine learning models and data engineering.
+                    </BioSection>
                 </Section>
 
                 <Section delay={0.2}>
