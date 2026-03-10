@@ -82,7 +82,7 @@ const Page = () => {
                         <BioYear>
                             2024
                         </BioYear>
-                        Vice President, Data Scientist I at the Bank of New York working on machine learning models and data engineering.
+                        Vice President, Data Scientist at the Bank of New York working on machine learning models and data engineering.
                     </BioSection>
                 </Section>
 
@@ -91,7 +91,7 @@ const Page = () => {
                         Hobbies
                     </Heading>
                     <Paragraph>
-                        <Link href='/keyboard' target="_blank" rel="noopener noreferrer">Keyboards</Link>, Music, Home Automation, <Link href='/coffee' target="_blank" rel="noopener noreferrer">Coffee</Link>, Random Scripts
+                        DevOps Homelab, <Link href='/keyboard' target="_blank" rel="noopener noreferrer">Keyboards</Link>, Music, Home Automation, <Link href='/coffee' target="_blank" rel="noopener noreferrer">Coffee</Link>, Random Scripts
                     </Paragraph>
                 </Section>
 
